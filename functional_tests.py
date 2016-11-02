@@ -5,6 +5,7 @@ class NewVisitorTest(unittest.TestCase):
 
 	def setUp(self): 
 		self.browser = webdriver.Chrome()
+		self.browser.implicitly_wait(3)
 
 	def tearDown(self): 
 		self.browser.quit()
@@ -33,5 +34,5 @@ class NewVisitorTest(unittest.TestCase):
 		# All done for the day. 
 
 	
-if __name__ == '__main__': 
+if __name__ == '__main__': #
 	unittest.main(warnings='ignore')
